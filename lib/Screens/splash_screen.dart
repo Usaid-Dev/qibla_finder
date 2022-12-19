@@ -15,17 +15,39 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 5),
-        () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: ((context) => const QiblahScreen()),
-              ),
-            ));
+      const Duration(seconds: 5),
+      () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: ((context) => const QiblahScreen()),
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.blueGrey,
+      body: Column(
+        children: const [
+          Padding(
+            padding:
+                EdgeInsets.only(top: 200, bottom: 100, left: 50, right: 50),
+            child: Center(
+              child: Image(image: AssetImage('images/qibla.png')),
+            ),
+          ),
+          Text(
+            'Welcome To Qibla Finder App',
+            style: TextStyle(
+              fontSize: 20,
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.bold,
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
