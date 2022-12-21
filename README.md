@@ -1,16 +1,11 @@
-# qibla_finder
+# Qibla_Finder_App
 
-A new Flutter project.
+A completely responsive Qibla-Finder App- Works on Android & IOS
 
-## Getting Started
+### Images of App
 
-This project is a starting point for a Flutter application.
+Splash_Screen
+<img src="https://user-images.githubusercontent.com/67046451/208955782-4852a832-cefe-4428-a1f1-9f8927f33dcc.jpeg">
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Qibla_Finder_Screen
+<img src="https://user-images.githubusercontent.com/67046451/208955913-5c040898-fce4-475d-8187-8fee496ea83b.jpeg">
