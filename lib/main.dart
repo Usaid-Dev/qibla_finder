@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:qibla_finder/Screens/splash_screen.dart';
+import 'package:qibla_finder/provider/theme_provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,9 +36,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
-      ),
+      themeMode: ThemeMode.system,
+      theme: MyThemes.lightTheme,
+      darkTheme: MyThemes.darkTheme,
       home: FutureBuilder(
         builder: (context, snapshot) {
           if (hasPermission) {

@@ -28,7 +28,6 @@ class _QiblahScreenState extends State<QiblahScreen>
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.blueGrey,
         body: StreamBuilder(
           stream: FlutterQiblah.qiblahStream,
           builder: (context, snapshot) {
@@ -43,9 +42,9 @@ class _QiblahScreenState extends State<QiblahScreen>
 
             final qiblahDirection = snapshot.data;
             animation = Tween(
-                    begin: begin,
-                    end: (qiblahDirection!.qiblah * (pi / 180) * -1))
-                .animate(_animationController!);
+              begin: begin,
+              end: (qiblahDirection!.qiblah * (pi / 180) * -1),
+            ).animate(_animationController!);
             begin = (qiblahDirection.qiblah * (pi / 180) * -1);
             _animationController!.forward(from: 0);
 

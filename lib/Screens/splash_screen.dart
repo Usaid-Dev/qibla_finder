@@ -28,14 +28,16 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
       body: Column(
         children: const [
           Padding(
             padding:
                 EdgeInsets.only(top: 200, bottom: 100, left: 50, right: 50),
             child: Center(
-              child: Image(image: AssetImage('images/qibla.png')),
+              child: Image(
+                image: AssetImage('images/qibla.png'),
+                color: Colors.blueGrey,
+              ),
             ),
           ),
           Text(
