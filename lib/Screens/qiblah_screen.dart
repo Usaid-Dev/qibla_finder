@@ -35,7 +35,7 @@ class _QiblahScreenState extends State<QiblahScreen>
               return Container(
                 alignment: Alignment.center,
                 child: const CircularProgressIndicator(
-                  color: Colors.white,
+                  color: Colors.grey,
                 ),
               );
             }
